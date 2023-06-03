@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+* .container-banner {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5%;
+  margin: 5% 0;
+}
+* .card-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: max(70px, 3.5vw);
+  padding: 0 0 5% 0;
+}
+* .cards-banner {
+  width: 26%;
+  border: 1px solid #ccccb3;
+  border-radius: max(15px, 2vw);
+  padding: 10px;
+}
+* .line-banner {
+  display: flex;
+  justify-content: center;
+  padding: 5% 0;
+}
+* .icon-banner {
+  width: 40%;
+  border-radius: 10%;
+}
+* .paragraf-banner {
+  padding: 5% 5% 15% 5%;
+  line-height: 1.4;
+}
+
+@media (max-width: 1030px) {
+  .card-banner {
+    justify-content: center;
+  }
+  .cards-banner {
+    width: 36%;
+    margin: 0 20px;
+  }
+}
+@media (max-width: 870px) {
+  .cards-banner {
+    width: 36%;
+  }
+}
+@media (max-width: 800px) {
+  .cards-banner {
+    width: 36%;
+  }
+}
+@media (max-width: 750px) {
+  .cards-banner {
+    width: 46%;
+    margin-left: 10%;
+  }
+}
+@media (max-width: 650px) {
+  .cards-banner {
+    width: 56%;
+    margin-left: 30%;
+  }
+}
+@media (max-width: 500px) {
+  .cards-banner {
+    width: 68%;
+    margin-left: 15%;
+  }
+}
+@media (max-width: 400px) {
+  .cards-banner {
+    width: 66%;
+    margin-left: 15%;
+  }
+}
+@media (max-width: 350px) {
+  .cards-banner {
+    width: 96%;
+    margin-left: 5%;
+  }
+}/*# sourceMappingURL=Banner-one.css.map */

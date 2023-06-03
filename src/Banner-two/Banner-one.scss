@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+  
+    .container-banner {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 5%;
+      margin: 5% 5%;
+    }
+    .card-banner {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      width: 90%;
+    }
+    .cards-banner {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      width: 26%;
+      border: 1px solid #ccccb3;
+      border-radius: max(15px, 2vw);
+      padding: 20px;
+      background-color:#cacac6;
+    }
+    .parfume{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+    }
+    .icon-banner {
+      width: 40%;
+      border-radius: 50%;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    .text{
+      display: flex;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 20px;
+    }
+    .paragraf-banner {
+     padding: 5% 2% 10% 10%;
+     font-size: 20px;
+}
+  }
+  
+  @media (max-width:1080px) {
+    .card-banner{
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+    .cards-banner{
+      width: 30%;
+    }
+  }
+  @media (max-width:800px) {
+    .card-banner{
+      flex-wrap: wrap;
+      width: 100%;
+      gap: 30px;
+    }
+    .cards-banner{
+      width: 35%;
+      gap: 30px;
+    }
+  }
+  @media (max-width:600px) {
+    .card-banner{
+      flex-wrap: wrap;
+      width: 100%;
+      gap: 30px;
+    }
+    .cards-banner{
+      width: 45%;
+      gap: 30px;
+    }
+  }
+  @media (max-width:450px) {
+    .card-banner{
+      flex-wrap: wrap;
+      width: 100%;
+      gap: 30px;
+    }
+    .cards-banner{
+      width: 45%;
+      gap: 30px;
+    }
+  }
+  @media (max-width:420px) {
+    .card-banner{
+      flex-wrap: wrap;
+      width: 100%;
+      gap: 30px;
+    }
+    .cards-banner{
+      width: 55%;
+      gap: 30px;
+    }
+  }
+

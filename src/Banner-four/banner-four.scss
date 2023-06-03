@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  .container-four {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+    background-color: #cacbd7;
+  }
+  .cards-four {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: max(70px, 3.5vw);
+    padding: 0 0 5% 0;
+  }
+  .card-four {
+    width: 20%;
+  }
+  .icon-banner-four{
+    width: 90%;
+    border-radius: 10px;
+    justify-content: center;
+    margin: 5% 5% 10% 5%;
+  }
+  .price-four {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 8px 0;
+    font-size: 20px;
+  }
+  .button-four {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+
+    button {
+      border: 2px solid #a72eb1;
+      background-color: #eeeeee;
+      color: #a72eb1;
+      padding: 7px 70px;
+      border-radius: 3px;
+    }
+  }
+}
+
+
+@media (max-width:1032px) {
+    button{
+        padding: 5px 50px !important;
+    }
+}
+@media (max-width:876px) {
+  .card-four{
+    width: 30%;
+  }
+    button{
+        padding: 4px 40px !important;
+    }
+}
+@media (max-width:770px) {
+    .card-four{
+        width: 30%;
+    }
+    button{
+        padding: 5px 35px !important;
+    }
+}
+@media (max-width:700px) {
+  .card-four{
+      width: 40%;
+  }
+  
+}
+@media (max-width:550px) {
+  .card-four{
+      width: 50%;
+  }
+  
+}
+@media (max-width:479px) {
+    .card-four{
+        width: 50%;
+    }
+    button{
+        padding: 5px 33px !important;
+    }
+}

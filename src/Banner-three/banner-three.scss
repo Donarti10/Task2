@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+  
+    .container-three {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 5%;
+      margin: 5% 5%;
+    }
+    .card-banner-three {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      width: 90%;
+    }
+    .cards-banner-three {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      width: 25%;
+      padding: 20px;
+    }
+    .image-three{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      gap: 20px;
+    }
+    .icon-banner-three {
+      width: 130%;
+      justify-content: space-around;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      
+    }
+    .text-three{
+      font-weight: bold;
+      font-size: 20px;
+      color: black;
+      margin-bottom: 20px;
+
+    }
+    .paragraf-banner-three{
+        width: 100%;
+        line-height: 1.3;
+        display: flex;
+        justify-content: center;
+        font-style: italic;
+    }
+  }
+  
+  @media (max-width:1080px) {
+    .card-banner-three{
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+    .cards-banner-three{
+      width: 30%;
+    }
+  }
+  @media (max-width:800px) {
+    .card-banner-three{
+      flex-wrap: wrap;
+      width: 100%;
+      gap: 30px;
+    }
+    .cards-banner-three{
+      width: 35%;
+      gap: 30px;
+    }
+  }
+  @media (max-width:600px) {
+    .card-banner-three{
+      flex-wrap: wrap;
+      width: 100%;
+      gap: 30px;
+    }
+    .cards-banner-three{
+      width: 45%;
+      gap: 30px;
+    }
+  }
+  @media (max-width:450px) {
+    .card-banner-three{
+      flex-wrap: wrap;
+      width: 100%;
+      gap: 30px;
+    }
+    .cards-banner-three{
+      width: 45%;
+      gap: 30px;
+    }
+  }
+  @media (max-width:420px) {
+    .card-banner-three{
+      flex-wrap: wrap;
+      width: 100%;
+      gap: 30px;
+    }
+    .cards-banner-three{
+      width: 55%;
+      gap: 30px;
+    }
+  }
+

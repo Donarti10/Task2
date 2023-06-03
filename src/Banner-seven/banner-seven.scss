@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+  
+    .container-banner-seven {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 5%;
+      margin: 5% 5%;
+    }
+    .card-banner-seven {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      width: 90%;
+    }
+    .cards-banner-seven {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      width: 26%;
+      padding: 20px;
+      background-color: #e4dede;
+
+    }
+    .persons{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+    }
+    .icon-banner-seven {
+      width: 90%;
+      border-radius: 20px;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    .text-seven{
+      display: flex;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 20px;
+      padding-bottom: 20px;
+    }
+    .paragraf-seven {
+     padding: 5% 2% 10% 10%;
+     font-size: 20px;
+     line-height: 1.3;
+}
+  }
+  
+  @media (max-width:1080px) {
+    .card-banner-seven{
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+    .cards-banner-seven{
+      width: 30%;
+    }
+  }
+  @media (max-width:800px) {
+    .card-banner-seven{
+      flex-wrap: wrap;
+      width: 100%;
+      gap: 30px;
+    }
+    .cards-banner-seven{
+      width: 35%;
+      gap: 30px;
+    }
+  }
+  @media (max-width:600px) {
+    .card-banner-{
+      flex-wrap: wrap;
+      width: 100%;
+      gap: 30px;
+    }
+    .cards-banner-seven{
+      width: 45%;
+      gap: 30px;
+    }
+  }
+  @media (max-width:450px) {
+    .card-banner-seven{
+      flex-wrap: wrap;
+      width: 100%;
+      gap: 30px;
+    }
+    .cards-banner-seven{
+      width: 45%;
+      gap: 30px;
+    }
+  }
+  @media (max-width:420px) {
+    .card-banner-seven{
+      flex-wrap: wrap;
+      width: 100%;
+      gap: 30px;
+    }
+    .cards-banner-seven{
+      width: 55%;
+      gap: 30px;
+    }
+  }
+
