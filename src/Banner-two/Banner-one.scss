@@ -1,105 +1,110 @@
 * {
-    margin: 0;
-    padding: 0;
-  
-    .container-banner {
-      display: flex;
-      justify-content: space-between;
-      padding: 0 5%;
-      margin: 5% 5%;
-    }
-    .card-banner {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      width: 90%;
-    }
-    .cards-banner {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      width: 26%;
-      border: 1px solid #ccccb3;
-      border-radius: max(15px, 2vw);
-      padding: 20px;
-      background-color:#cacac6;
-    }
-    .parfume{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-around;
-    }
-    .icon-banner {
-      width: 40%;
-      border-radius: 50%;
-      justify-content: center;
-      margin-bottom: 20px;
-    }
-    .text{
-      display: flex;
-      justify-content: center;
-      font-weight: bold;
-      font-size: 20px;
-    }
-    .paragraf-banner {
-     padding: 5% 2% 10% 10%;
-     font-size: 20px;
-}
-  }
-  
-  @media (max-width:1080px) {
-    .card-banner{
-      justify-content: space-around;
-      flex-wrap: wrap;
-      gap: 30px;
-    }
-    .cards-banner{
-      width: 30%;
-    }
-  }
-  @media (max-width:800px) {
-    .card-banner{
-      flex-wrap: wrap;
-      width: 100%;
-      gap: 30px;
-    }
-    .cards-banner{
-      width: 35%;
-      gap: 30px;
-    }
-  }
-  @media (max-width:600px) {
-    .card-banner{
-      flex-wrap: wrap;
-      width: 100%;
-      gap: 30px;
-    }
-    .cards-banner{
-      width: 45%;
-      gap: 30px;
-    }
-  }
-  @media (max-width:450px) {
-    .card-banner{
-      flex-wrap: wrap;
-      width: 100%;
-      gap: 30px;
-    }
-    .cards-banner{
-      width: 45%;
-      gap: 30px;
-    }
-  }
-  @media (max-width:420px) {
-    .card-banner{
-      flex-wrap: wrap;
-      width: 100%;
-      gap: 30px;
-    }
-    .cards-banner{
-      width: 55%;
-      gap: 30px;
-    }
-  }
+  margin: 0;
+  padding: 0;
 
+  .container-banner {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+    font-family: 'Poppins', sans-serif;
+    margin: 10.5% 0 ;
+  }
+  .card-banner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .cards-banner {
+    display: flex;
+    flex-direction: column;
+    width: 26%;
+    border: 1px solid #ccccb3;
+    border-radius: max(15px, 2vw);
+    padding: 20px;
+    background-color: #cacac6;
+    transition: transform 0.3s ease;
+  }
+  
+  .cards-banner:hover {
+    transform: translateY(5px);
+    box-shadow: 0 2px 4px rgb(30, 29, 29);
+  }
+  
+  .parfume {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .icon-banner {
+    width: max(50px, 6vw);
+    border-radius: 50%;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .text {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: max(16px, 1.7vw);
+  }
+  .paragraf-banner {
+    padding: 5% 2% 10% 10%;
+    font-size: max(14px, 1.4vw);
+  }
+}
+
+@media (max-width: 1080px) {
+  .card-banner {
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .cards-banner {
+    width: 30%;
+  }
+}
+@media (max-width: 800px) {
+  .card-banner {
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 30px;
+  }
+  .cards-banner {
+    width: 35%;
+    gap: 30px;
+  }
+}
+@media (max-width: 600px) {
+  .card-banner {
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 30px;
+  }
+  .cards-banner {
+    width: 45%;
+    gap: 30px;
+  }
+}
+@media (max-width: 450px) {
+  .card-banner {
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 30px;
+  }
+  .cards-banner {
+    width: 45%;
+    gap: 30px;
+  }
+}
+@media (max-width: 420px) {
+  .card-banner {
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 30px;
+  }
+  .cards-banner {
+    width: 55%;
+    gap: 30px;
+  }
+}

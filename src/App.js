@@ -66,6 +66,7 @@ function Table() {
         <Dropdown />
       </TabPanel>
       <TabPanel>
+        <div className="container">
         <div className="container-banner">
           <div className="card-banner">
             {Data2.map((b) => {
@@ -87,6 +88,7 @@ function Table() {
               );
             })}
           </div>
+        </div>
         </div>
       </TabPanel>
       <TabPanel>

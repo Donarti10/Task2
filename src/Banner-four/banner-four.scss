@@ -6,30 +6,40 @@
     display: flex;
     justify-content: space-between;
     padding: 0 5%;
-    background-color: #cacbd7;
+    background: rgb(87, 71, 71);
+    background: linear-gradient(
+      0deg,
+      rgba(87, 71, 71, 1) 0%,
+      rgba(164, 130, 55, 1) 49%,
+      rgba(87, 71, 71, 1) 100%
+    );
+    font-family: 'Poppins', sans-serif;
   }
   .cards-four {
     display: flex;
-    align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     gap: max(70px, 3.5vw);
-    padding: 0 0 5% 0;
+    padding: 0 0 3% 0;
   }
   .card-four {
     width: 20%;
   }
-  .icon-banner-four{
-    width: 90%;
-    border-radius: 10px;
+  .icon-banner-four {
+    width: max(170px, 19vw);
     justify-content: center;
-    margin: 5% 5% 10% 5%;
+    margin: 5%;
+    transition: transform 3s;
+  }
+  .icon-banner-four:hover{
+    transform: translateX(-20px);
+    transition: 1s;
   }
   .price-four {
     display: flex;
     justify-content: center;
     padding: 10px 0 8px 0;
-    font-size: 20px;
+    font-size: max(16px, 1.6vw);
   }
   .button-four {
     display: flex;
@@ -40,51 +50,92 @@
       border: 2px solid #a72eb1;
       background-color: #eeeeee;
       color: #a72eb1;
-      padding: 7px 70px;
+      padding: 7px 60px;
+      cursor: pointer;
       border-radius: 3px;
+      font-size: max(13px, 1vw);
+      transition: transform 1000ms;
+    }
+    button:hover,
+    button:focus-visible {
+      transform: translateY(-0.75rem);
     }
   }
 }
 
-
-@media (max-width:1032px) {
-    button{
-        padding: 5px 50px !important;
-    }
+@media (max-width: 1080px) {
+  button {
+    padding: 5px 50px !important;
+  }
 }
-@media (max-width:876px) {
-  .card-four{
+
+@media (max-width: 1032px) {
+  button {
+    padding: 5px 50px !important;
+  }
+}
+@media (max-width: 876px) {
+  .card-four {
     width: 30%;
   }
-    button{
-        padding: 4px 40px !important;
-    }
-}
-@media (max-width:770px) {
-    .card-four{
-        width: 30%;
-    }
-    button{
-        padding: 5px 35px !important;
-    }
-}
-@media (max-width:700px) {
-  .card-four{
-      width: 40%;
+  button {
+    padding: 4px 40px !important;
+    margin-left: -40px;
   }
-  
-}
-@media (max-width:550px) {
-  .card-four{
-      width: 50%;
+  .price-four {
+    margin-left: -40px;
   }
-  
 }
-@media (max-width:479px) {
-    .card-four{
-        width: 50%;
-    }
-    button{
-        padding: 5px 33px !important;
-    }
+@media (max-width: 770px) {
+  .card-four {
+    width: 30%;
+  }
+  button {
+    padding: 5px 35px !important;
+    margin-left: 5px;
+  }
+}
+.price-four {
+  margin-left: 5px;
+}
+@media (max-width: 700px) {
+  .card-four {
+    width: 40%;
+  }
+  button {
+    margin-left: -50px;
+  }
+}
+.price-four {
+  margin-left: -50px;
+}
+@media (max-width: 550px) {
+  .card-four {
+    width: 50%;
+  }
+}
+@media (max-width: 479px) {
+  .card-four {
+    width: 50%;
+  }
+  button {
+    padding: 5px 33px !important;
+    margin-left: -24px;
+  }
+}
+@media (max-width: 450px) {
+  button {
+    margin-left: 10px;
+  }
+}
+.price-four {
+  margin-left: 10px;
+}
+@media (max-width: 350px) {
+  button {
+    margin-left: 25px;
+  }
+}
+.price-four {
+  margin-left: 25px;
 }

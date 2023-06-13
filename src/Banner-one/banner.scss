@@ -2,27 +2,45 @@
   margin: 0;
   padding: 0;
 
-  .react-tabs__tab-list{
+  .react-tabs__tab-list {
     display: flex;
     justify-content: space-between;
     border: none !important;
-    padding: 1%;
-    margin: 0 7px !important;
     flex-wrap: wrap !important;
     color: #8a9485 !important;
+    margin: 0px !important;
+    background: rgb(33, 147, 176);
+    background: linear-gradient(
+      90deg,
+      rgba(33, 147, 176, 1) 0%,
+      rgba(109, 213, 237, 1) 100%
+    );
+    color: #fff !important;
+    font-family: 'Poppins', sans-serif !important;
+  }
+  .react-tabs__tab{
+    display: flex !important;
+    border: none !important;
+    border-bottom: none !important;
+    bottom: 0 !important;
+    cursor: pointer !important;
   }
   .react-tabs__tab--selected{
+    background: none !important;
+    border-color: none !important;
+    color: #fff !important;
+  }
+  .react-tabs__tab--selected {
     display: flex;
-    border-bottom: 2px solid #1424a2 !important;
-    border-top: none !important;
-    border-left: none !important;
-    border-right: none !important;
+    border: none ;
   }
   .container {
     display: flex;
     justify-content: space-between;
     padding: 0 5%;
-    margin: 5% 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(#c4e0e5, #4ca1af );
   }
   .cards {
     display: flex;
@@ -39,17 +57,18 @@
     display: flex;
     justify-content: center;
     padding: 10px 0;
-    font-size: 22px;
+    font-size: max(15px, 1.7vw);
   }
   .card-price {
     display: flex;
     justify-content: center;
     padding: 10px 0 8px 0;
-    font-size: 20px;
+    font-size: max(14px, 1.5vw);
   }
   .card-text {
     display: flex;
     justify-content: center;
+    font-size: max(15px, 1.5vw);
   }
   .card-button {
     display: flex;
@@ -58,103 +77,134 @@
 
     button {
       border: 1px solid blue;
-      background-color: white;
-      color: blue;
-      padding: 7px 70px;
+      background: rgb(87, 71, 71);
+      background: linear-gradient(
+        0deg,
+        rgb(69, 184, 205) 0%,
+        rgba(131, 196, 168, 1) 100%
+      );
+      color: #ebebeb;
+      padding: 7px 60px;
+      cursor: pointer;
       border-radius: 3px;
+      font-size: max(10px, 1.2vw);
+      transition: transform 1000ms;
+    }
+    button:hover,
+    button:focus-visible {
+      transform: translateY(0.75rem);
+      transition: transform 750ms;
+      background: #ebe6e6;
+      color: #222;
     }
   }
 }
-
-
-@media (max-width:1032px) {
-    button{
-        padding: 5px 50px !important;
-    }
+@media (max-width: 1080px) {
+  button {
+    padding: 5px 50px;
+  }
 }
-@media (max-width:876px) {
-    button{
-        padding: 4px 40px !important;
-    }
+
+@media (max-width: 1032px) {
+  button {
+    padding: 5px 50px;
+  }
 }
-@media (max-width:770px) {
-  .react-tabs__tab-list{
+@media (max-width: 876px) {
+  button {
+    padding: 4px 40px;
+    margin-right: -35px;
+  }
+}
+@media (max-width: 770px) {
+  .react-tabs__tab-list {
     flex-wrap: wrap !important;
     width: 55% !important;
     align-items: center !important;
     margin-left: 25% !important;
-   }
-    .card{
-        width: 30%;
-    }
-    button{
-        padding: 5px 35px !important;
-    }
+  }
+  .card {
+    width: 30%;
+  }
+  button {
+    padding: 5px 35px;
+    margin-right: 10px;
+  }
 }
-@media (max-width:700px) {
-  .react-tabs__tab-list{
-    flex-wrap: wrap !important;
-    width: 33% !important;
-    align-items: center !important;
-    margin-left: 40% !important;
-   }
-}
-@media (max-width:700px) {
-  .react-tabs__tab-list{
+@media (max-width: 700px) {
+  .react-tabs__tab-list {
     flex-wrap: wrap !important;
     width: 39% !important;
     align-items: center !important;
     margin-left: 33% !important;
     align-items: center !important;
-   }
   }
-@media (max-width:620px) {
-  .react-tabs__tab-list{
+  button {
+    margin-right: -40px;
+  }
+}
+@media (max-width: 620px) {
+  .react-tabs__tab-list {
     flex-wrap: wrap !important;
     width: 34% !important;
     align-items: center !important;
     margin-left: 40% !important;
-   }
+  }
 }
-@media (max-width:514px) {
-  .react-tabs__tab-list{
+@media (max-width: 514px) {
+  .react-tabs__tab-list {
     flex-wrap: wrap !important;
     flex-direction: column !important;
     width: 30% !important;
     align-items: center !important;
     margin-left: 35% !important;
-   }
+  }
 }
-@media (max-width:479px) {
-  // .react-tabs__tab-list{
-  //   flex-wrap: wrap !important;
-  //   flex-direction: column !important;
-  //   width: 30% !important;
-  //   align-items: center !important;
-  //   margin-left: 35% !important;
-  //  }  
-  .card{
-        width: 40%;
-    }
-    button{
-        padding: 5px 33px !important;
-    }
+@media (max-width: 479px) {
+  .card {
+    width: 40%;
+  }
+  button {
+    padding: 5px 33px;
+    margin-right: -20px;
+  }
 }
-@media (max-width:429px) {
-    .react-tabs__tab-list{
+@media (max-width: 479px) {
+  button {
+    margin-right: 10px;
+  }
+}
+@media (max-width: 429px) {
+  .react-tabs__tab-list {
     flex-wrap: wrap !important;
     flex-direction: column !important;
     width: 40% !important;
     align-items: center !important;
     margin-left: 30% !important;
-   }  
+  }
 }
-@media (max-width:326px) {
-  .react-tabs__tab-list{
-  flex-wrap: wrap !important;
-  flex-direction: column !important;
-  width: 50% !important;
-  align-items: center !important;
-  margin-left: 27% !important;
- }  
+@media (max-width: 370px) {
+  .card {
+    width: 70%;
+  }
+  button {
+    margin-right: 9px;
+  }
+}
+@media (max-width: 342px) {
+  .card {
+    width: 60%;
+  }
+  button {
+    margin-right: 30px;
+  }
+}
+@media (max-width: 326px) {
+  .react-tabs__tab-list {
+    flex-wrap: wrap !important;
+    flex-direction: column !important;
+    width: 50% !important;
+    align-items: center !important;
+    margin-left: 27% !important;
+  }
 }
